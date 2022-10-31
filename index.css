@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  font-size: 130%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.realtime {
+  display: flex;
+  padding: 0.5cm 0 0 1cm;
+  font-size: 300%;
+}
+.clock-progress {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  border-style: solid;
+  border-radius: 100%;
+  border-width: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  padding-bottom: 1cm;
+  justify-content: center;
+}
+
+.buttons-toolbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-inline: auto;
+}
+.start-btn,
+.pause-btn,
+.reset-btn {
+  padding: 10px 1cm 10px 1cm;
+  font-family: inherit;
+  font-size: 120%;
+  background-color: white;
+  border-width: 3px;
+  cursor: pointer;
+}
+.start-btn:hover:not([disabled]),
+.pause-btn:hover:not([disabled]),
+.reset-btn:hover:not([disabled]) {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3cm 3cm 1cm 3cm;
+  justify-content: space-evenly;
+}
+.actual-period-title {
+  font-size: 200%;
+  transition: 2s;
+}
+.timer {
+  font-size: 180%;
+  transition: 2s;
+}
+
+.pomodoro-settings,
+.short-break-settings,
+.long-break-settings {
+  font-family: inherit;
+  border: solid black;
+  font-size: 120%;
+  border-width: 3px;
+  padding: 20px 10px 20px 10px;
+}
+
+.minus-button,
+.plus-button {
+  display: inline;
+  height: 30%;
+  width: 30%;
+  border-radius: 100%;
+  margin: 0 10px 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.disabled {
+  cursor: not-allowed;
+}
