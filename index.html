@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body onload="startDateTime()">
+    <header>
+      <p id="time-time" class="realtime"></p>
+      <h1>Pomodoro Timer</h1>
+    </header>
+
+    <div class="clock">
+      <div class="half-circle"></div>
+      <div class="half-circle"></div>
+      <div class="half-circle-top"></div>
+      <div class="clock-progress">
+        <p class="actual-period-title">Pomodoro 1</p>
+        <p class="timer">25:00</p>
+      </div>
+    </div>
+
+    <div class="buttons-toolbar">
+      <button class="pause-btn" type="button">Pause</button>
+      <button class="start-btn" type="button">Start</button>
+      <button class="reset-btn" type="button">Reset</button>
+    </div>
+
+    <div class="settings">
+      <div class="pomodoro-settings">
+        <p class="pomodoro-title"">Pomodoro</p>
+        <p class="pomodoro-time">25:00</p>
+        <button class="minus-button" type="button">-</button>
+        <button class="plus-button" type="button">+</button>
+      </div>
+
+      <div class="short-break-settings">
+        <p class="short-break-title">Short Break</p>
+        <p class="short-break-time">5:00</p>
+        <button class="minus-button" type="button">-</button>
+        <button class="plus-button" type="button">+</button>
+      </div>
+
+      <div class="long-break-settings">
+        <p class="long-break-title">Long break</p>
+        <p class="long-break-time">25:00</p>
+        <button class="minus-button" type="button">-</button>
+        <button class="plus-button" type="button">+</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
